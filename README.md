@@ -1,23 +1,38 @@
 # AliOS_Things_Developer_Kit_demo
 
 #### 介绍
-存放AliOS Things Developer Kit开发板自己编写的学习例程
+存放AliOS Things Developer Kit开发板自己编写的STM32CubeMX+Keil MDK学习例程
 
-#### 软件架构
-软件架构说明
+#### 目录说明
+1.  debug_printf
 
+   将开发板通过USB线插入到PC端，打开串口调试助手即可观察。
 
-#### 安装教程
+2. debug_led_blink
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+   开发板三个可控制的LED闪烁例程
 
-#### 使用说明
+   3.debug_keyboard
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+   开发板三个按键分别控制三个LED灯亮灭的例程
+
+   4.debug_lcd_st7789
+
+   开发板控制LCD显示色块
+
+   5.debug_tf_card_play_video
+
+   开发板通过fatfs加载SD卡中的bin文件,让LCD显示全屏图片数据流(视频播放的原理)
+
+   
+
+- AliOS Things Developer Kit技术文档资料
+
+   存放官方提供的技术资料
+
+- AliOS Things Developer Kit局部电路原理图解析
+
+   个人阅读电路原理图的笔记
 
 #### 参与贡献
 
