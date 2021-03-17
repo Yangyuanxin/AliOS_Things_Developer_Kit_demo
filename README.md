@@ -12,15 +12,15 @@
 
    开发板三个可控制的LED闪烁例程
 
-   3.debug_keyboard
+3. debug_keyboard
 
    开发板三个按键分别控制三个LED灯亮灭的例程
 
-   4.debug_lcd_st7789
+4. debug_lcd_st7789
 
    开发板控制LCD显示色块
 
-   5.debug_tf_card_play_video
+5. debug_tf_card_play_video
 
    开发板通过fatfs加载SD卡中的bin文件,让LCD显示全屏图片数据流(视频播放的原理)
 
