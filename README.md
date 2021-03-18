@@ -28,6 +28,10 @@
 
    开发板通过USB线与OTG接口与PC端相连接以后，会在PC端将开发板上的SD卡虚拟成U盘
 
+7. FreeRTOS_CMSIS_OS_V1
+
+   编写基于FreeRTOS CMSIS_OS V1入门综合例程，包括线程、信号量、互斥量、队列、定时器
+
    
 
    
