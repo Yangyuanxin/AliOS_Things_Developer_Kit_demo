@@ -111,12 +111,6 @@ static HAL_StatusTypeDef st7789_write(int is_cmd, uint8_t data)
 }
 
 
-static HAL_StatusTypeDef st7789_write_fb(uint16_t *data, uint16_t size)
-{
-  assert_param(NULL != hspi_lcd);
-  return HAL_SPI_Transmit(hspi_lcd, (uint8_t *)data, size, HAL_MAX_DELAY);
-}
-
 /********************************************************************
 *
 *       LcdWriteReg
@@ -273,29 +267,6 @@ void LCD_Show_Image(uint16_t x, uint16_t y, uint16_t width, uint16_t height, con
         }
             
     }  
-}
-
-//发送到显示区域
-static void spec_send_fb(uint16_t color, uint16_t pixel_num)
-{
-  int i;
-  int count, remain;
-  uint16_t real_mem[LCD_MAX_MEM16_BLOCK] = {0};
-
-  for (i = 0; i < LCD_MAX_MEM16_BLOCK; ++i) {
-    real_mem[i] = color;
-  }
-  HAL_GPIO_WritePin(LCD_DC_GPIO_Port, LCD_DC_Pin, GPIO_PIN_SET);
-  if (pixel_num <= LCD_MAX_MEM16_BLOCK) {
-    st7789_write_fb(real_mem, pixel_num << 1);
-  } else {
-    count = pixel_num / LCD_MAX_MEM16_BLOCK;
-    remain = pixel_num % LCD_MAX_MEM16_BLOCK;
-    for (i = 0; i < count; ++i) {
-      st7789_write_fb(real_mem, LCD_MAX_MEM16_BLOCK << 1);
-    }
-    st7789_write_fb(real_mem, remain << 1);
-  }
 }
 
 //写寄存器
