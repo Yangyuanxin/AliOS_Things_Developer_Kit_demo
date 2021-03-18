@@ -8,7 +8,7 @@
 ![img](https://img-blog.csdnimg.cn/20191007202002468.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly95YW5neXVhbnhpbi5ibG9nLmNzZG4ubmV0,size_16,color_FFFFFF,t_70)
 
 #### 目录说明
-1.  debug_printf
+1. debug_printf
 
    将开发板通过USB线插入到PC端，打开串口调试助手即可观察。
 
@@ -32,11 +32,15 @@
 
    开发板通过USB线与OTG接口与PC端相连接以后，会在PC端将开发板上的SD卡虚拟成U盘
 
-7. FreeRTOS_CMSIS_OS_V1
+7. debug_camera_display
+
+   开发板将板载摄像头GC0329实时将数据显示到LCD显示屏上
+
+8. FreeRTOS_CMSIS_OS_V1
 
    编写基于FreeRTOS CMSIS_OS V1入门综合例程，包括线程、信号量、互斥量、队列、定时器
 
-8. FreeRTOS_CMSIS_OS_V2
+9. FreeRTOS_CMSIS_OS_V2
 
    编写基于FreeRTOS CMSIS_OS V2入门综合例程，包括线程、信号量、互斥量、队列、定时器
 
@@ -44,7 +48,6 @@
 
    
 
-   
 
 - AliOS Things Developer Kit技术文档资料
 
