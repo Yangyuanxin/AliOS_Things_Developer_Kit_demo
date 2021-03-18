@@ -24,6 +24,12 @@
 
    开发板通过fatfs加载SD卡中的bin文件,让LCD显示全屏图片数据流(视频播放的原理)
 
+6. debug_tf_card_usb_msc
+
+   开发板通过USB线与OTG接口与PC端相连接以后，会在PC端将开发板上的SD卡虚拟成U盘
+
+   
+
    
 
 - AliOS Things Developer Kit技术文档资料
